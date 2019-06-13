@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: python-app1
-        image: 192.168.10.168:5000/abilash/python-app1
+        image: x.x.x.x:5000/abilash/python-app1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
