@@ -13,13 +13,14 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+
 - task: Docker@2
   inputs:
     containerRegistry: 'testpipelinergistry'
     repository: 'abilash/python-app'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-
+    tags: 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/k8s'
