@@ -19,3 +19,8 @@ steps:
     repository: 'abilash/python-app'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/k8s'
+    ArtifactName: 'k8s'
