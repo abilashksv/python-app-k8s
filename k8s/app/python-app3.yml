@@ -20,6 +20,8 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+        - name: azr-auth
 
 ---
 apiVersion: autoscaling/v1
