@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: python-app2
-        image: testpipelineregistry.azurecr.io/abilash/python-app2
+        image: testpipelineregistry.azurecr.io/abilash/python-app
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
