@@ -46,7 +46,7 @@ metadata:
   labels:
     name: python-app3
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: https
     protocol: TCP
